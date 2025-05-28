@@ -1,0 +1,288 @@
+body,
+html {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.navigation-wrapper {
+  background-color: #ffffff;
+}
+
+.navigation-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 24.7px;
+}
+
+.nav-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-container {
+  background-image: url("./image/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen */
+}
+
+/* ✅ Hover on nav-image to change hero-container */
+.nav-image:hover .hero-container {
+  border: 23px solid white;
+  transition: 1s ease-in-out all;
+}
+
+.hero-container .logo-image {
+  width: 547px;
+  height: 184px;
+}
+
+/* featured images starts */
+
+.featured-image-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+  column-gap: 20px;
+}
+
+.featured-image-1 {
+  background-image: url("./image/image-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 448px; /* Fixed width */
+  height: 522px; /* Fixed height */
+}
+
+.featured-image-2 {
+  background-image: url("./image/image-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 448px; /* Fixed width */
+  height: 522px; /* Fixed height */
+}
+
+.featured-image-3 {
+  background-image: url("./image/image-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 448px; /* Fixed width */
+  height: 522px; /* Fixed height */
+}
+/* featured images ends */
+/* written contents starts */
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/*   UURO banner start  */
+
+.banner {
+  background-image: url(./image/Banner-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 100vh;
+  margin-top: 50px;
+}
+
+/*   UURO banner finish  */
+
+/*  Uuro info start */
+
+.info {
+  background-color: #011e3c;
+  height: 60vh;
+  margin-top: 60px;
+}
+
+.info h2 {
+  color: #ffffff;
+}
+
+/* for these two we have created a .classlist in javascript that will change the text 
+wight and the color of the javascriot.html file  */
+.bolderText{
+  font-weight: 900;
+}
+
+.changeColor{
+  color: red;
+}
+
+
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  height: 100%;
+}
+
+.info-wrapper .image-container {
+  width: 20%;
+}
+.info-wrapper h2 {
+  width: 60%;
+}
+
+/*  uuro info end */
+
+/*  video and image section starts */
+
+.video-section {
+  background-color: #222222;
+
+  margin-top: 60px;
+  height: 108vh;
+}
+
+.video-content {
+  width: 40%;
+  padding-bottom: 60px;
+}
+
+.only-video {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 60px;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.nature-image {
+  width: 60%;
+  background-image: url("./image/nature_image.png");
+  background-size: cover, 20%; /* 🎯 Second value scales the foreground image */
+  background-position: center, top right;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+}
+
+/*  video and image section starts */
+
+/*   hero banner 2 starts */
+
+.hero-banner2 {
+  background-image: url("./image/HERO-Banner-v2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 807px;
+  margin-top: 50px;
+}
+
+/*   hero banner 2 ends */
+
+/* image gallery start */
+
+.image-gallery {
+  background-color: #222222;
+}
+
+.gallery-elements {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 30px;
+  margin-top: 60px;
+}
+
+.gallery img {
+  width: 374px;
+  height: 500px;
+}
+
+/* image gallery end */
+
+/* footer start */
+
+.footer-image {
+  background-image: url("./image/footer-1.png");
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+  position: relative;
+}
+
+.footer-element {
+  background-color: #00000075;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tagline-container h1 {
+  color: #ffffff;
+  font-size: px;
+}
+
+.footer-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 60px;
+}
+
+.footer-nav-container a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.7px;
+}
+
+.logo-container img {
+  width: 500px;
+
+  object-fit: cover;
+}
+
+/* footer end */

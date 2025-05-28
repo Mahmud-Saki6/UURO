@@ -1,0 +1,65 @@
+html
+
+
+<!-- Video and iamge section start  -->
+
+  <div class="video-section">
+    <div class="only-video container">
+      <div class="video-content">
+        <video style="width: 100%;" autoplay muted loop>
+          <source src="image/video1.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="nature-image">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Video and iamge section end  -->
+
+
+
+css
+
+
+/*  video and image section starts */
+
+.video-section {
+  background-color: #222222;
+  /* height: 80vh; */
+  margin-top: 60px;
+  height: 80vh;
+}
+
+.video-content {
+  width: 40%;
+  padding-bottom: 30px;
+}
+
+.only-video {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 60px;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.nature-image {
+  width: 60%;
+  background-image: url("./image/nature_image.png");
+  background-size: cover, 20%; /* 🎯 Second value scales the foreground image */
+  background-position: center, top right;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+}
+
+
+/*  video and image section starts */
+
+
+
+
+

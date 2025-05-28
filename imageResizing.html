@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resizing Image</title>
+    <link rel="stylesheet" href="imageResizing.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container" id="image">
+        <img src="/image/resize.png" alt="" />
+      </div>
+    </div>
+    <div class="image-text">
+      <p id="text">Image is resized successfully</p>
+    </div>
+
+    <div class="button-container">
+      <!-- <button onclick="changeSize()">Resizing</button>
+      <button onclick="clearSize()">Clear</button> -->
+      <div class="inpuarea">
+        <input type="text" id="textitem" placeholder="Input Text" />
+        <p id="displayText"></p>
+        <button onclick="myFunc()">Submit</button>
+        <button onclick="clearSize()">Clear</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myFunc() {
+      let name = document.getElementById("textitem").value;
+      document.getElementById("displayText").innerHTML = "You entered: " + name;
+    }
+    function clearSize() {
+      document.getElementById("textitem").value = "";
+      document.getElementById("displayText").innerHTML = "";
+    }
+  </script>
+</html>
